@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #666;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    background-image: url(https://www.metropolia.fi/sites/default/files/styles/16_9_fullwith_extra_large/public/2020-01/myllypuron-kampus-ilmakuva.jpg?h=8abcec71);
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav_background {
+    background-color: #565756;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100%;
+}
+
+.map-container {
+    width: 60%;
+    min-height: 400px; 
+    background-color: #fff;
+    padding: 20px;
+}
+
+#map { height: 100%; width: 100%; }
+
+.restaurant-list {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.weekly-menu {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Manages footers properties */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
