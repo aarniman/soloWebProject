@@ -75,9 +75,13 @@ main {
     min-height: 400px; 
     background-color: #fff;
     padding: 20px;
+    height: 30rem;
 }
 
-#map { height: 100%; width: 100%; }
+#map {
+    height: 100%;
+    width: 100%; 
+}
 
 .restaurant-list {
     width: 30%;
