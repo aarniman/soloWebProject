@@ -32,6 +32,7 @@ main {
     justify-content: space-between;
     padding: 4rem;
     background-image: url(https://www.metropolia.fi/sites/default/files/styles/16_9_fullwith_extra_large/public/2020-01/myllypuron-kampus-ilmakuva.jpg?h=8abcec71);
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -42,6 +43,7 @@ main {
     color: #fff;
     text-align: center;
     padding: 10px;
+    z-index: 1000;
 }
 
 .nav_background {
@@ -53,9 +55,20 @@ main {
     display: flex;
     text-align: center;
     padding: 10px;
+    z-index: 1000;
 }
 
-
+#menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+#menu-container > * {
+    min-width: min-content;
+    min-height: min-content;
+}
 
 .nav-list {
     display: flex;
@@ -72,28 +85,76 @@ main {
 
 .map-container {
     width: 60%;
-    min-height: 400px; 
+    min-height: 400px;
     background-color: #fff;
     padding: 20px;
     height: 30rem;
+    border: 2px solid #333;
 }
 
 #map {
     height: 100%;
-    width: 100%; 
+    width: 100%;
 }
 
-.restaurant-list {
+.restaurant-div {
+    border: 2px solid #333;
     width: 30%;
     background-color: #fff;
     padding: 20px;
 }
 
-.weekly-menu {
+.weekly-div {
+    border: 2px solid #333;
     width: 30%;
     background-color: #fff;
     padding: 20px;
 }
+
+.daily-div {
+    border: 2px solid #333;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Manages the list of restaurants */
+
+#restaurant-list {
+  overflow-y: scroll;
+  max-height: 25rem;
+  border: 1px solid #333;
+}
+
+#restaurant-list li:first-child {
+  font-weight: bold;
+}
+
+#restaurant-list:nth-child(even) li {
+  background-color: white;
+}
+
+#restaurant-list:nth-child(odd) li {
+  background-color: grey;
+}
+
+/* Manage Daily/Weekly buttons */
+
+#daily-button {
+  padding: 5px;
+  border: none;
+  height: 2rem;
+  border-radius: 10%;
+}
+
+#weekly-button {
+  padding: 5px;
+  border: none;
+  height: 2rem;
+  border-radius: 10%;
+}
+
+
 
 /* Manages footers properties */
 footer {

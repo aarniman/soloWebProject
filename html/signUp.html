@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="frontPage.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="frontPage.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <div class="nav_background" id="myHeader">
-            <ul class="nav-list">
-                <h1>Restaurant Finder</h1>
-                <li><a href="/html/singUp.html">Sing up</a></li>
-                <li><a href="/html/logIn.html">Log in</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class="singUp-continer">
-            <h2>Sign Up</h2>
-            <form action="/html/frontPage.html" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <button type="submit">Log In</button>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Restaurant Finder</p>
-    </footer>
+  <header>
+    <div class="nav_background" id="myHeader">
+      <ul class="nav-list">
+        <h1><a href="/html/frontPage.html">Restaurant Finder</a></h1>
+        <li><a href="/html/singUp.html">Sing up</a></li>
+        <li><a href="/html/logIn.html">Log in</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="singUp-continer">
+      <h2>Sign Up</h2>
+      <form action="/html/frontPage.html" method="post">
+        <label for="username">Username:</label>
+        <input type="username" id="username" name="username" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Restaurant Finder</p>
+  </footer>
 </body>
+
 </html>

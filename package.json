@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "prettier": "^3.2.5"
+  },
+  "name": "solowebproject",
+  "description": "LINK TO FRONTPAGE HTML: [Front Page](https://users.metropolia.fi/~aarniman/soloWebProject/html/frontPage.html)",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
